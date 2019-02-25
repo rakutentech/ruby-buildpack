@@ -22,12 +22,18 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
 - name: jruby
   version: 9.1.17.0
   uri: https://buildpacks.cloudfoundry.org/dependencies/jruby/jruby-9.1.17.0_ruby-2.3-linux-x64-cflinuxfs2-028bd5cf.tgz
-  sha256: 028bd5cfc9ec959cee68e9657661e11dcba06d45852c03f3e25298fc1d58a4ee
+  sha256: '028bd5cfc9ec959cee68e9657661e11dcba06d45852c03f3e25298fc1d58a4ee'
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: jruby
   version: 9.1.17.0
   uri: https://buildpacks.cloudfoundry.org/dependencies/jruby/jruby-9.1.17.0_ruby-2.3-linux-x64-cflinuxfs3-c58da178.tgz
@@ -40,6 +46,9 @@ dependencies:
   sha256: 141bdc76ff4ab754ad9e2c1d749f8ffceaf3dcfa4dd3850128be82dfdd210a0f
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: jruby
   version: 9.2.0.0
   uri: https://buildpacks.cloudfoundry.org/dependencies/jruby/jruby-9.2.0.0_ruby-2.5-linux-x64-cflinuxfs3-d890f72b.tgz
@@ -52,6 +61,9 @@ dependencies:
   sha256: 48a4a12d08dd067dedd8bf440e259dd853b77298e78fe80f702627c1ca4a54b6
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: node
   version: 6.14.4
   uri: https://buildpacks.cloudfoundry.org/dependencies/node/node-6.14.4-linux-x64-cflinuxfs3-b1f0f41f.tgz
@@ -65,18 +77,27 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.2.9
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.2.9-linux-x64-6d65b1e2.tgz
   sha256: 6d65b1e27ac44445e951325ab869ed164ad649d04df3129697fde6afe224b66d
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.2.10
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.2.10-linux-x64-cflinuxfs2-70fe7ff3.tgz
   sha256: 70fe7ff3c4e814160b97ad0812253c4b168416f0abb477419ff93fdbdd104cc7
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.2.10
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.2.10-linux-x64-cflinuxfs3-6649b56e.tgz
@@ -89,6 +110,9 @@ dependencies:
   sha256: 31630396a5f7b712a592728c027ddd7309e617e9d902b7f677fb247869fd8793
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.3.7
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.3.7-linux-x64-cflinuxfs3-a72dc47f.tgz
@@ -101,6 +125,9 @@ dependencies:
   sha256: 7751357a5e72d445ce3739448a9852fa4fc0efacf2fdad9e489744e84f0e5fb0
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.3.8
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.3.8-linux-x64-cflinuxfs3-34718170.tgz
@@ -113,6 +140,9 @@ dependencies:
   sha256: 65674838d8550574481d782ddff83f199021350fc2eb24b4aa0952e6f5375249
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.4.4
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.4.4-linux-x64-cflinuxfs3-a7d1badf.tgz
@@ -125,6 +155,9 @@ dependencies:
   sha256: 3131cb19beeee3701e905bb1738817c5af8be7c150994510e956a1cba98a8ade
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.4.5
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.4.5-linux-x64-cflinuxfs3-bedb8b6b.tgz
@@ -137,6 +170,9 @@ dependencies:
   sha256: cf2423b4eb2914ce5e92d3157d519ab909b96d72153be0c8f1558b56b9c78ed8
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.5.1
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.5.1-linux-x64-cflinuxfs3-d275cd81.tgz
@@ -149,6 +185,9 @@ dependencies:
   sha256: b8584ecae59e2ba059bff91f01522c4b012f767a9dfb999883b1e3d8347b3aa3
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.5.3
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.5.3-linux-x64-cflinuxfs3-5d5a8f8c.tgz
@@ -162,13 +201,19 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
 - name: yarn
   version: 1.12.1
   uri: https://buildpacks.cloudfoundry.org/dependencies/yarn/yarn-1.12.1-any-stack-09bea8f4.tar.gz
-  sha256: 09bea8f4ec41e9079fa03093d3b2db7ac5c5331852236d63815f8df42b3ba88d
+  sha256: '09bea8f4ec41e9079fa03093d3b2db7ac5c5331852236d63815f8df42b3ba88d'
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
 include_files:
 - CHANGELOG
 - CONTRIBUTING.md
