@@ -38,102 +38,153 @@ dependencies:
   md5: 803337ccdaabcbb935eb983e5322f3f1
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: rubygems
   version: 2.6.13
   uri: https://buildpacks.cloudfoundry.org/dependencies/manual-binaries/ruby/rubygems-2.6.13.tgz
   md5: e6f19b51614055d826e431549a12a80b
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.4.2
   md5: 3810a760ff6d55d8476d179c2f9f8653
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.4.2-linux-x64-3810a760.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.4.1
   md5: 9e45185894c63e4be0f45caa2d5546e1
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.4.1-linux-x64-9e451858.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.3.4
   md5: 8939735f9b2c08436f25649ee320b82b
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.3.4-linux-x64-8939735f.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.3.5
   md5: 5634abe2e31a6e379b2fa28ad221c038
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.3.5-linux-x64-5634abe2.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.2.7
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.2.7-linux-x64-49b6bf7e.tgz
   md5: 49b6bf7ea67e3f9ea4490be828c600f0
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.2.8
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.2.8-linux-x64-af774eb0.tgz
   md5: af774eb07c7b21977b2954b7e6dc8e2e
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.1.9
   md5: 0042edb77be85274acb2c2a23c90e0c1
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.1.9-linux-x64-0042edb7.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: ruby
   version: 2.1.8
   md5: 9b2572f38be50d692d6491d4c7718626
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.1.8-linux-x64-9b2572f3.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: jruby
   version: ruby-1.9.3-jruby-1.7.26
   uri: https://buildpacks.cloudfoundry.org/dependencies/manual-binaries/jruby/jruby-1.7.26_ruby-1.9.3-linux-x64-ce031315.tgz
   md5: ce0313153c607d0556b272350293acd5
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: jruby
   version: ruby-2.0.0-jruby-1.7.26
   uri: https://buildpacks.cloudfoundry.org/dependencies/manual-binaries/jruby/jruby-1.7.26_ruby-2.0.0-linux-x64-acd1b1d9.tgz
   md5: acd1b1d90d9eb1b94e84dc8555d9c475
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: jruby
   version: ruby-2.3.3-jruby-9.1.13.0
   uri: https://buildpacks.cloudfoundry.org/dependencies/jruby/jruby-9.1.13.0_ruby-2.3.4-linux-x64-98fa85e0.tgz
   md5: 98fa85e0d4a3ea1a13d33443190dba7a
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: node
   version: 4.8.4
   uri: https://buildpacks.cloudfoundry.org/dependencies/node/node-4.8.4-linux-x64-230101ff.tgz
   md5: 230101ff1ca8309ee8ab37b1c9ad28d8
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: bundler
   version: 1.15.4
   uri: https://buildpacks.cloudfoundry.org/dependencies/bundler/bundler-1.15.4-e083af6d.tgz
   md5: e083af6d9b61cd30cad2ef2b9d1d4a8d
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: node
   version: 6.11.3
   uri: https://buildpacks.cloudfoundry.org/dependencies/node/node-6.11.3-linux-x64-ba51d463.tgz
   md5: ba51d463da63776d20582e07cb9b4d9d
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: yarn
   version: 1.0.2
   uri: https://buildpacks.cloudfoundry.org/dependencies/yarn/yarn-v1.0.2-bcdf4469.tar.gz
   md5: bcdf44691092302858de5df1012861e3
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 include_files:
 - CHANGELOG
 - CONTRIBUTING.md
