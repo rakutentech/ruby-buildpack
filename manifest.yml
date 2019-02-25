@@ -1,130 +1,169 @@
 ---
 language: ruby
-
 url_to_dependency_map:
-  - match: ruby-(.*?)-jruby-(.*?)\.tgz
-    name: jruby
-    version: ruby-$1-jruby-$2
-  - match: ruby-(\d+\.\d+\.\d+)
-    name: ruby
-    version: $1
-  - match: node-v?(\d+\.\d+\.\d+)
-    name: node
-    version: 0.12.7
-  - match: libyaml-(\d+\.\d+\.\d+)
-    name: libyaml
-    version: $1
-  - match: bundler-(\d+\.\d+\.\d+)
-    name: bundler
-    version: $1
-  - match: rails_log_stdout
-    name: rails_log_stdout
-    version: 0
-  - match: rails3_serve_static_assets
-    name: rails3_serve_static_assets
-    version: 0
-  - match: openjdk1.8-latest
-    name: openjdk1.8-latest
-    version: 1.8.0_51
-
+- match: ruby-(.*?)-jruby-(.*?)\.tgz
+  name: jruby
+  version: ruby-$1-jruby-$2
+- match: ruby-(\d+\.\d+\.\d+)
+  name: ruby
+  version: "$1"
+- match: node-v?(\d+\.\d+\.\d+)
+  name: node
+  version: 0.12.7
+- match: libyaml-(\d+\.\d+\.\d+)
+  name: libyaml
+  version: "$1"
+- match: bundler-(\d+\.\d+\.\d+)
+  name: bundler
+  version: "$1"
+- match: rails_log_stdout
+  name: rails_log_stdout
+  version: 0
+- match: rails3_serve_static_assets
+  name: rails3_serve_static_assets
+  version: 0
+- match: openjdk1.8-latest
+  name: openjdk1.8-latest
+  version: 1.8.0_51
 dependencies:
-  - name: node
-    version: 0.12.7
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/node/beta-binaries/node-0.12.7-linux-x64.tar.gz
-    md5: 2b966ce7cceda8bcb6aba43eb99b81cf
-    cf_stacks:
-      - cflinuxfs2
-  - name: libyaml
-    version: 0.1.6
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/ruby/binaries/cflinuxfs2/libyaml-0.1.6.tgz
-    md5: 94665f3a39e670507828f5084a40b669
-    cf_stacks:
-      - cflinuxfs2
-  - name: bundler
-    version: 1.9.7
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/ruby/binaries/shared/bundler-1.9.7.tgz
-    md5: 895b476cc0eba8b2cd978a5c5767bc71
-    cf_stacks:
-      - cflinuxfs2
-  - name: rails_log_stdout
-    version: 0
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/ruby/binaries/lucid64/rails_log_stdout.tgz
-    md5: 9ecd9126ba4a5f12ec98bc75c433885f
-    cf_stacks:
-      - cflinuxfs2
-  - name: rails3_serve_static_assets
-    version: 0
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/ruby/binaries/lucid64/rails3_serve_static_assets.tgz
-    md5: 53ec25d17a33791989873388d779d644
-    cf_stacks:
-      - cflinuxfs2
-  - name: openjdk1.8-latest
-    version: 1.8.0_51
-    uri: https://download.run.pivotal.io/openjdk/trusty/x86_64/openjdk-1.8.0_51.tar.gz
-    md5: aeb29e36b1b1efec8b888c76a21a8d13
-    cf_stacks:
-      - cflinuxfs2
-  - name: ruby
-    version: 2.2.2
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/ruby/ruby-2.2.2-linux-x64.tgz
-    md5: 3a66010947862c1225f54933a3697006
-    cf_stacks:
-      - cflinuxfs2
-  - name: ruby
-    version: 2.2.3
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/ruby/ruby-2.2.3-linux-x64.tgz
-    md5: bd2987703535e17b2e0f9b732adc0027
-    cf_stacks:
-      - cflinuxfs2
-  - name: ruby
-    version: 2.1.6
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/ruby/ruby-2.1.6-linux-x64.tgz
-    md5: 3a3d714bcdbfc1fc7184f30b0da065c5
-    cf_stacks:
-      - cflinuxfs2
-  - name: ruby
-    version: 2.1.5
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/ruby/ruby-2.1.5-linux-x64.tgz
-    md5: 05eb253eb5a7a772afaf4a1a919cd540
-    cf_stacks:
-      - cflinuxfs2
-  - name: ruby
-    version: 2.0.0
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/ruby/ruby-2.0.0-p645-linux-x64.tgz
-    md5: c3bbec3a42739c07e768e2b13e674afb
-    cf_stacks:
-      - cflinuxfs2
-  - name: jruby
-    version: ruby-1.9.3-jruby-1.7.21
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/ruby/beta-binaries/cflinuxfs2/jruby-1.7.21_ruby-1.9.3-linux-x64.tgz
-    md5: bbf1226c39e26658662bf85f5dcd0cd3
-    cf_stacks:
-      - cflinuxfs2
-  - name: jruby
-    version: ruby-2.0.0-jruby-1.7.21
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/ruby/beta-binaries/cflinuxfs2/jruby-1.7.21_ruby-2.0.0-linux-x64.tgz
-    md5: ddf858909d42f8882b6b48110ea245bb
-    cf_stacks:
-      - cflinuxfs2
-  - name: jruby
-    version: ruby-2.2.2-jruby-9.0.0.0
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/jruby/jruby-9.0.0.0_ruby-2.2.2-linux-x64.tgz
-    md5: dead68c49f4f8a0d57fbc9c96bec16b7
-    cf_stacks:
-      - cflinuxfs2
-
+- name: node
+  version: 0.12.7
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/node/beta-binaries/node-0.12.7-linux-x64.tar.gz
+  md5: 2b966ce7cceda8bcb6aba43eb99b81cf
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: libyaml
+  version: 0.1.6
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/ruby/binaries/cflinuxfs2/libyaml-0.1.6.tgz
+  md5: 94665f3a39e670507828f5084a40b669
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: bundler
+  version: 1.9.7
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/ruby/binaries/shared/bundler-1.9.7.tgz
+  md5: 895b476cc0eba8b2cd978a5c5767bc71
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: rails_log_stdout
+  version: 0
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/ruby/binaries/lucid64/rails_log_stdout.tgz
+  md5: 9ecd9126ba4a5f12ec98bc75c433885f
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: rails3_serve_static_assets
+  version: 0
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/ruby/binaries/lucid64/rails3_serve_static_assets.tgz
+  md5: 53ec25d17a33791989873388d779d644
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: openjdk1.8-latest
+  version: 1.8.0_51
+  uri: https://download.run.pivotal.io/openjdk/trusty/x86_64/openjdk-1.8.0_51.tar.gz
+  md5: aeb29e36b1b1efec8b888c76a21a8d13
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: ruby
+  version: 2.2.2
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/ruby/ruby-2.2.2-linux-x64.tgz
+  md5: 3a66010947862c1225f54933a3697006
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: ruby
+  version: 2.2.3
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/ruby/ruby-2.2.3-linux-x64.tgz
+  md5: bd2987703535e17b2e0f9b732adc0027
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: ruby
+  version: 2.1.6
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/ruby/ruby-2.1.6-linux-x64.tgz
+  md5: 3a3d714bcdbfc1fc7184f30b0da065c5
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: ruby
+  version: 2.1.5
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/ruby/ruby-2.1.5-linux-x64.tgz
+  md5: 05eb253eb5a7a772afaf4a1a919cd540
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: ruby
+  version: 2.0.0
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/ruby/ruby-2.0.0-p645-linux-x64.tgz
+  md5: c3bbec3a42739c07e768e2b13e674afb
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: jruby
+  version: ruby-1.9.3-jruby-1.7.21
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/ruby/beta-binaries/cflinuxfs2/jruby-1.7.21_ruby-1.9.3-linux-x64.tgz
+  md5: bbf1226c39e26658662bf85f5dcd0cd3
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: jruby
+  version: ruby-2.0.0-jruby-1.7.21
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/ruby/beta-binaries/cflinuxfs2/jruby-1.7.21_ruby-2.0.0-linux-x64.tgz
+  md5: ddf858909d42f8882b6b48110ea245bb
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: jruby
+  version: ruby-2.2.2-jruby-9.0.0.0
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/jruby/jruby-9.0.0.0_ruby-2.2.2-linux-x64.tgz
+  md5: dead68c49f4f8a0d57fbc9c96bec16b7
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
 exclude_files:
-  - .git/
-  - .gitignore
-  - .gitmodules
-  - repos/
-  - spec/
-  - cf_spec/
-  - log/
-  - test/
-  - cf.Gemfile
-  - cf.Gemfile.lock
-  - bin/package
-  - buildpack-packager/
-  - ruby_buildpack-*v*.zip
-  - cf_build/
+- ".git/"
+- ".gitignore"
+- ".gitmodules"
+- repos/
+- spec/
+- cf_spec/
+- log/
+- test/
+- cf.Gemfile
+- cf.Gemfile.lock
+- bin/package
+- buildpack-packager/
+- ruby_buildpack-*v*.zip
+- cf_build/
