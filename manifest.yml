@@ -22,6 +22,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   source: http://github.com/bundler/bundler/tree/v1.17.3
   source_sha256: a34cf18749cc92e25329fc11418bf7800853b74e1e39f82223841114d84d58de
 - name: bundler
@@ -31,6 +34,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   source: http://github.com/bundler/bundler/tree/v2.0.1
   source_sha256: 1b572bb0de581d5315060b967303e56d77d7e6b066f2e4f7de8d89151acb9eaf
 - name: jruby
@@ -39,6 +45,9 @@ dependencies:
   sha256: '028bd5cfc9ec959cee68e9657661e11dcba06d45852c03f3e25298fc1d58a4ee'
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://s3.amazonaws.com/jruby.org/downloads/9.1.17.0/jruby-src-9.1.17.0.tar.gz
   source_sha256: b66d7c14f85075afdabb5ebf5950804c5a5d5c1d05ab833f580f04ee709b5773
 - name: jruby
@@ -55,6 +64,9 @@ dependencies:
   sha256: 812bbffff1c31ab8175754b2a774031ced86f4bb54019bc66e6eccb343b7c340
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://s3.amazonaws.com/jruby.org/downloads/9.2.7.0/jruby-src-9.2.7.0.tar.gz
   source_sha256: fadd9437cbc950e5ae96dc3e7f1558480c071837a2ea58887800f9feb6d37e6c
 - name: jruby
@@ -71,6 +83,9 @@ dependencies:
   sha256: 044c98dc6f91403b90191716a4756a2d196df2a45e261788d83b9784ad469628
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://nodejs.org/dist/v6.17.1/node-v6.17.1.tar.gz
   source_sha256: 6fa487c5c6770cc7ca0567c0e532d6bcdf0f5d1aebdceb169ecfb66984459dea
 - name: node
@@ -96,6 +111,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   source: https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_192.tar.gz
   source_sha256: 44873f0aaf087bea7b744639f1bd7d98db5d28a88953b72b178abdf0a7c27d08
 - name: ruby
@@ -104,6 +122,9 @@ dependencies:
   sha256: 6d65b1e27ac44445e951325ab869ed164ad649d04df3129697fde6afe224b66d
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://cache.ruby-lang.org/pub/ruby/2.2/ruby-2.2.9.tar.gz
   source_sha256: 2f47c77054fc40ccfde22501425256d32c4fa0ccaf9554f0d699ed436beca1a6
 - name: ruby
@@ -112,6 +133,9 @@ dependencies:
   sha256: 70fe7ff3c4e814160b97ad0812253c4b168416f0abb477419ff93fdbdd104cc7
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://cache.ruby-lang.org/pub/ruby/2.2/ruby-2.2.10.tar.gz
   source_sha256: cd51019eb9d9c786d6cb178c37f6812d8a41d6914a1edaf0050c051c75d7c358
 - name: ruby
@@ -128,6 +152,9 @@ dependencies:
   sha256: 31630396a5f7b712a592728c027ddd7309e617e9d902b7f677fb247869fd8793
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.7.tar.gz
   source_sha256: 35cd349cddf78e4a0640d28ec8c7e88a2ae0db51ebd8926cd232bb70db2c7d7f
 - name: ruby
@@ -144,6 +171,9 @@ dependencies:
   sha256: 7751357a5e72d445ce3739448a9852fa4fc0efacf2fdad9e489744e84f0e5fb0
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.8.tar.gz
   source_sha256: b5016d61440e939045d4e22979e04708ed6c8e1c52e7edb2553cf40b73c59abf
 - name: ruby
@@ -160,6 +190,9 @@ dependencies:
   sha256: 3131cb19beeee3701e905bb1738817c5af8be7c150994510e956a1cba98a8ade
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.5.tar.gz
   source_sha256: 6737741ae6ffa61174c8a3dcdd8ba92bc38827827ab1d7ea1ec78bc3cefc5198
 - name: ruby
@@ -176,6 +209,9 @@ dependencies:
   sha256: 8c8a0e572f11dcc85539d0c5a3958b7c669506f6900d12fdc2f438c6d66ca778
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.6.tar.gz
   source_sha256: de0dc8097023716099f7c8a6ffc751511b90de7f5694f401b59f2d071db910be
 - name: ruby
@@ -192,6 +228,9 @@ dependencies:
   sha256: b8584ecae59e2ba059bff91f01522c4b012f767a9dfb999883b1e3d8347b3aa3
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://cache.ruby-lang.org/pub/ruby/2.5/ruby-2.5.3.tar.gz
   source_sha256: 9828d03852c37c20fa333a0264f2490f07338576734d910ee3fd538c9520846c
 - name: ruby
@@ -208,6 +247,9 @@ dependencies:
   sha256: 640c6bcbb569d2b70241c95a7059d750ca53731c90b0ba72761053c65f6595f8
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://cache.ruby-lang.org/pub/ruby/2.5/ruby-2.5.5.tar.gz
   source_sha256: 28a945fdf340e6ba04fc890b98648342e3cccfd6d223a48f3810572f11b2514c
 - name: ruby
@@ -224,6 +266,9 @@ dependencies:
   sha256: 84f8011baf482c5f5cfe6bb287a0ff708814b852e922eff24c236d7feab767e2
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://cache.ruby-lang.org/pub/ruby/2.6/ruby-2.6.2.tar.gz
   source_sha256: a0405d2bf2c2d2f332033b70dff354d224a864ab0edd462b7a413420453b49ab
 - name: ruby
@@ -240,6 +285,9 @@ dependencies:
   sha256: e074bfca2c23dbdc3dc4a1d9a9225f54b48ff86c1d5f99fb043609550d9f0a93
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://cache.ruby-lang.org/pub/ruby/2.6/ruby-2.6.3.tar.gz
   source_sha256: 577fd3795f22b8d91c1d4e6733637b0394d4082db659fccf224c774a2b1c82fb
 - name: ruby
@@ -257,6 +305,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   source: https://rubygems.org/rubygems/rubygems-3.0.3.tgz
   source_sha256: be3a7abc31e91de667406e84cd15265b73fc502268a1dd09404214a49b4acb2c
 - name: yarn
@@ -266,6 +317,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   source: https://github.com/yarnpkg/yarn/releases/download/v1.15.2/yarn-v1.15.2.tar.gz
   source_sha256: c4feca9ba5d6bf1e820e8828609d3de733edf0e4722d17ed7ce493ed39f61abd
 include_files:
